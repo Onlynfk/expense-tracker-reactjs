@@ -1,2 +1,2 @@
-# Learning reactjs 
-# buidling an expense tracker
+# Learning Reactjs 😏
+# building an expense tracker ✨
