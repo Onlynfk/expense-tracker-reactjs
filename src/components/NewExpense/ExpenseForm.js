@@ -23,7 +23,7 @@ const ExpenseForm =  (props) =>{
 
         const expenseData = {
             title :enteredTitle,
-            amount : enteredAmount ,
+            amount : +enteredAmount,
             date : new Date(selectedDate),
         };
 
@@ -36,7 +36,7 @@ const ExpenseForm =  (props) =>{
     
 
 
-    return <form onSubmit={submitHandler && props.onCancel}>
+    return <form onSubmit={submitHandler}>
         <div className="new-expense__controls">
             <div className="new-expense__control">
                 <label >Title</label>

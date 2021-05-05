@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import './ExpenseItem.css';
 import Card from '../../UI/Card';
 import ExpenseDate from '../ExpenseDate/ExpenseDate';
@@ -6,14 +5,10 @@ import ExpenseDate from '../ExpenseDate/ExpenseDate';
 
 const ExpenseItem = (props) =>{
 // function check handler
-    const [title, setTitle] = useState(props.title);
     console.log("ExpenseItem re-evaluated", )
     // let title = props.title;
 
-    const clickHandler =() =>{
-        setTitle("Updated!");
-        console.log(title);
-    };
+  
 
     return ( 
         <li>
@@ -25,7 +20,6 @@ const ExpenseItem = (props) =>{
               ${props.amount}
           </div>
           </div>
-          <button onClick={clickHandler}> Change title</button>
         </Card>
         </li>
     );
